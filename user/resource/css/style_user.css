@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection{
+    color: #ddd;
+    background-color: rgba(244, 47, 44, 0.6);
+}
+html{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(img/bg.jpg);
+    height: 100vh;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: #ddd;
+    color: #2c2c2c;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Fredoka One', cursive;
+    text-rendering: optimizeLegibility;
+}
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 300%;
+    color: #ddd;
+    letter-spacing: 5px;
+    word-spacing: 2px;
+    text-shadow: 3px 5px 5px #f42f2c;
+}
+h2{
+    font-size: 200%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 100px;
+    letter-spacing: 2px;
+    font-weight: 100; 
+    color: #ddd;
+}
+h3{
+    font-size: 250%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: right;
+    color: #ddd;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 200px;
+    transition: background-color 0.4s, color 0.2s,border 0.2s;
+}
+.btn-full:link,
+.btn-full:visited{
+    margin-right: 20px;
+    border: 1px solid #f42f2c;
+    background-color: #f42f2c;
+    color: #ddd;
+    font-size: 20px;
+}
+.btn-full:hover,
+.btn-full:active{
+    border: 1px solid #dddddd;
+    background-color: transparent;
+    color: #ddd;
+}
+.logo{
+    height: 130px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+section{
+    padding: 100px 0;
+}
+.box{
+    padding: 50px;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 10px;
+}
+.box i{
+    font-size: 280%;
+}
+.box a:link,
+.box a:visited{
+    text-decoration: none;
+    color: #ddd;
+    letter-spacing: 1px;
+    transition: all .3s;
+}
+.box a:hover,
+.box a:active{
+    color: #f42f2c;
+}
+.bg-modal1{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    display: none;
+    position: fixed;
+    z-index: 1;
+}
+.modal-content1{
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    position: relative;
+}
+.modal-content1 p{
+    margin: 20px;
+    text-align: left;
+    padding: 5px;
+    font-size: 25px;
+}
+.close1{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: #ddd;
+    font-size: 40px;
+    color: #f42f2c;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.close1:hover{
+    color: #2c2c2c;
+}
+.bg-modal2{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    display: none;
+    position: fixed;
+    z-index: 1;
+}
+.modal-content2{
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    position: relative;
+}
+.modal-content2 p{
+    margin: 5px;
+    padding: 3px;
+    color: rgba(44, 44, 44, 0.7);
+    font-size: 15px;
+}
+.modal-content2 input[type=file]{
+    display: block;
+    margin: 15px;
+    padding: 10px;
+}
+.modal-content2 input[type=submit]{
+    margin: 10px;
+    padding: 5px 30px;
+    font-size: 19px;
+    border: 2px solid #2c2c2c;
+    background: transparent;
+    border-radius: 50px;
+    transition: all .3s;
+    cursor: pointer;
+}
+.modal-content2 input[type=submit]:hover{
+    border: 2px solid #f42f2c;
+    color: #f42f2c;
+}
+.close2{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: #ddd;
+    font-size: 40px;
+    color: #f42f2c;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.close2:hover{
+    color: #2c2c2c;
+}
+.bg-modal3{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    display: none;
+    position: fixed;
+    z-index: 1;
+}
+.modal-content3{
+    width: 500px;
+    height: auto;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    position: relative;
+}
+.modal-content3 input[type=password]{
+    display: block;
+    margin-top: 20px;
+    color: #2c2c2c;
+    padding: 10px;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #ddd;
+    outline: none;
+}
+.modal-content3 input[type=password]:focus{
+    border-bottom: 2px solid #f42f2c;
+}
+.modal-content3 input[type=submit]{
+    margin-top: 20px;
+    padding: 5px 30px;
+    font-size: 19px;
+    border: 2px solid #2c2c2c;
+    background: transparent;
+    border-radius: 50px;
+    transition: all .3s;
+    cursor: pointer;
+}
+.modal-content3 input[type=submit]:hover{
+    border: 2px solid #f42f2c;
+    color: #f42f2c;
+}
+.close3{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: #ddd;
+    font-size: 40px;
+    color: #f42f2c;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.close3:hover{
+    color: #2c2c2c;
+}
